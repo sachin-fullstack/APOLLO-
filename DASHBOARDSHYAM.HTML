@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dashboard</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+	<script src="dashboard.js"></script>
+
+	<header>
+		<div class="logo">
+	<a href="https://ibb.co/YdB6ZGf"><img src="https://i.ibb.co/YdB6ZGf/Elegant-and-Minimalist-Medical-Logo.png" alt="APOLLO+" border="0"></a>
+		</div>
+		<nav class="navbar">
+			<a href="#" class="active">Home</a>
+			<a href="#" class="icon"><i class="fas fa-video"></i> Call</a>
+			<a href="#" class="icon"><i class="fas fa-stethoscope"></i> Doctor</a>
+			<a href="#" class="icon"><i class="fas fa-map-marker-alt"></i>Live</a>
+			<a href="#" class="profile"><img src="https://p.jing.fm/clipimg/small/298-2986280_female-dummy-profile.png" alt="Profile Picture"></a>
+			<a href="#" class="logout">Logout</a>
+		</nav>
+	</header>
+
+	<div class="dashboard-container">
+		<h2>Welcome, User!</h2>
+
+		<div class="card">
+			<h3>Heart Rate</h3>
+			<div class="video-container">
+				<iframe src="https://media.istockphoto.com/id/1350820473/video/mri-heart-or-cardiac-mri-or-magnetic-resonance-imaging-of-heart-compare-rvot-and-lvot-for.mp4?s=mp4-640x640-is&k=20&c=r287VVO5ZbDNcyFGO1X7PPCUATOXDo18FP3gp6blrZI=" allowfullscreen></iframe>
+			</div>
+			<canvas id="heartRateChart"></canvas>
+			<img src="https://images2.minutemediacdn.com/image/upload/c_fill,g_auto,h_1248,w_2220/v1555285101/shape/mentalfloss/cardiac-cycle-animated.jpg?itok=DkSbrOfE" alt="Heart Rate Image">
+
+
+
+		</div>
+
+		<div class="card">
+			<h3>Blood Pressure</h3>
+			<canvas id="bloodPressureChart"></canvas>
+			<img src="https://i5.walmartimages.com/asr/fe673b3e-02f9-4f59-b269-d0a6766b9a19.f1f1fec74de9d5b914248a10ce6ce03b.jpeg" alt="Blood Pressure Image">
+		</div>
+
+		<div class="card">
+			<h3>Body Mass Index</h3>
+			<canvas id="bmiChart"></canvas>
+			<img src="https://images.creativemarket.com/0.1.0/ps/6938353/1820/1213/m1/fpnw/wm1/gck2kx1aw6bg00tq29gsdjv6jzy4r4hhjlklltwvv54m9vwf0qaihmptsymgetcg-.jpg?1567880367&s=3e669be6f6ab00ff2f3217bf34423e6a" alt="BMI Image">
+		</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script src="dashboard.js"></script>
+</body>
+</html>
